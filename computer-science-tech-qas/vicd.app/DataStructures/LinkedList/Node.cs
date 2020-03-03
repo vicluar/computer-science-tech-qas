@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace vicd.app.DataStructures.LinkedList
+﻿namespace vicd.app.DataStructures.LinkedList
 {
     internal class Node
     {

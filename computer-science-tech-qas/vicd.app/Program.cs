@@ -1,4 +1,5 @@
 ﻿using System;
+using vicd.app.DataStructures.LinkedList;
 
 namespace vicd.app
 {
@@ -6,7 +7,8 @@ namespace vicd.app
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var linkedListService = new LinkedListService();
+            linkedListService.Execute();
         }
     }
 }
