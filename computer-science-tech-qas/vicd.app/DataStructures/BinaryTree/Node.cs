@@ -6,9 +6,9 @@ namespace vicd.app.DataStructures.BinaryTree
 {
     internal class Node
     {
-        public Pet PetData { get; set; }
-        public Node LeftChild { get; set; }
-        public Node RightChild { get; set; }
+        public Pet PetData { get; private set; }
+        public Node LeftChild { get; private set; }
+        public Node RightChild { get; private set; }
 
         public Node(Pet petData) =>
             (PetData) = (petData);
