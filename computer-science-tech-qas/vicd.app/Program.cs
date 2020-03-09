@@ -1,4 +1,5 @@
 ﻿using System;
+using vicd.app.DataStructures.BinaryTree;
 using vicd.app.DataStructures.LinkedList;
 
 namespace vicd.app
@@ -7,8 +8,11 @@ namespace vicd.app
     {
         static void Main(string[] args)
         {
-            var linkedListService = new LinkedListService();
-            linkedListService.Execute();
+            var binaryTreeService = new BinaryTreeService();
+            binaryTreeService.Execute();
+
+            //var linkedListService = new LinkedListService();
+            //linkedListService.Execute();
         }
     }
 }

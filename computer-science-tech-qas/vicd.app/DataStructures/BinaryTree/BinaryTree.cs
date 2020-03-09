@@ -18,7 +18,7 @@ namespace vicd.app.DataStructures.BinaryTree
 
         private void PrintTreeTraverse(Node node)
         {
-            while (node != null)
+            if (node != null)
             {
                 Console.WriteLine($"Pet Name: {node.PetData.Name}");
 
