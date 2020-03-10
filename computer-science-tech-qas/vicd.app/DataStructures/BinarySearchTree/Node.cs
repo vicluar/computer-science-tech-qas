@@ -12,5 +12,11 @@ namespace vicd.app.DataStructures.BinarySearchTree
 
         public Node(int key) =>
             (Key) = (key);
+
+        public void AddLeftNode(Node node) =>
+            (LeftNode) = (node);
+
+        public void AddRightNode(Node node) =>
+            (RigthNode) = (node);
     }
 }
