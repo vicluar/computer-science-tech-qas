@@ -1,6 +1,7 @@
 ﻿using System;
 using vicd.app.DataStructures.BinaryTree;
 using vicd.app.DataStructures.LinkedList;
+using vicd.app.DataStructures.Trie;
 
 namespace vicd.app
 {
@@ -8,6 +9,9 @@ namespace vicd.app
     {
         static void Main(string[] args)
         {
+            var trieService = new TrieService();
+            trieService.Execute();
+
             //Testing("abcdefghijklm");
 
             //var binaryTreeService = new BinaryTreeService();
