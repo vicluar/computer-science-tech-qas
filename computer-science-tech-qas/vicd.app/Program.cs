@@ -9,10 +9,10 @@ namespace vicd.app
     {
         static void Main(string[] args)
         {
-            var trieService = new TrieService();
-            trieService.Execute();
+            ExecuteTrieAutocompleteService();
 
-            //Testing("abcdefghijklm");
+            //var trieService = new TrieService();
+            //trieService.Execute();
 
             //var binaryTreeService = new BinaryTreeService();
             //binaryTreeService.Execute();
@@ -21,18 +21,19 @@ namespace vicd.app
             //linkedListService.Execute();
         }
 
-        //static void Testing(string key)
-        //{
-        //    int index;
-        //    int lenght = key.Length;
+        private static void ExecuteTrieAutocompleteService()
+        {
+            Console.WriteLine("Type your word...");
+            var keyWord = Console.ReadLine();
 
-        //    for (int level = 0; level < lenght; level++)
-        //    {
-        //        index = key[level] - 'a';
-        //        Console.WriteLine(index);
-        //    }
+            var trieAutocompleteService = new TrieAutocompleteService();
+            var suggestedWords = trieAutocompleteService.GetSuggestedWords(keyWord);
 
-        //    Console.Read();
-        //}
+            Console.WriteLine("Suggested words...");
+            foreach (var word in suggestedWords)
+            {
+                Console.WriteLine(word);
+            }
+        }
     }
 }
