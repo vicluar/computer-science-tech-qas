@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using vicd.app.DataStructures.BinaryTree;
 using vicd.app.DataStructures.LinkedList;
 using vicd.app.DataStructures.Trie;
@@ -20,6 +21,17 @@ namespace vicd.app
             var trieAutocompleteService = new TrieAutocompleteService();
             var suggestedWords = trieAutocompleteService.GetSuggestedWords(keyWord);
 
+            if (suggestedWords == null || suggestedWords.Count <= 0)
+            {
+                Console.WriteLine("No suggested words");
+                return;
+            }
+                
+            PrintSuggestedWords(suggestedWords);
+        }
+
+        private static void PrintSuggestedWords(List<string> suggestedWords)
+        {
             Console.WriteLine("Suggested words...");
             foreach (var word in suggestedWords)
             {
