@@ -10,15 +10,6 @@ namespace vicd.app
         static void Main(string[] args)
         {
             ExecuteTrieAutocompleteService();
-
-            //var trieService = new TrieService();
-            //trieService.Execute();
-
-            //var binaryTreeService = new BinaryTreeService();
-            //binaryTreeService.Execute();
-
-            //var linkedListService = new LinkedListService();
-            //linkedListService.Execute();
         }
 
         private static void ExecuteTrieAutocompleteService()
